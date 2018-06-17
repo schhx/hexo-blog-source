@@ -1,42 +1,68 @@
 ---
-title: Hello World
+title: 使用Hexo博客源码快速搭建博客
 categories:
   - 随笔
 tags:
   - 随笔
+date: 2018-06-17 20:35:26
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+使用Hexo博客源码快速搭建博客。
 
-### Create a new post
+<!-- more -->
 
-``` bash
-$ hexo new "My New Post"
+## 快速开始
+
+本博客使用[Hexo](https://hexo.io/zh-cn/)搭建，主题使用[material](https://github.com/viosey/hexo-theme-material)，并做了符合自己的个性化配置。
+
+### 下载代码
+
+```
+git clone git@github.com:schhx/hexo-blog-source.git
+cd hexo-blog-source
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+### 安装依赖
 
-### Run server
-
-``` bash
-$ hexo server
+```
+yarn install
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
+### 启动项目
 
-### Generate static files
-
-``` bash
-$ hexo generate
+```
+hexo s
 ```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+可以使用浏览器打开```http://localhost:4000```预览
 
-### Deploy to remote sites
+### 新建一篇博客
 
-``` bash
-$ hexo deploy
+```
+hexo new new-blog
 ```
 
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+在source/_post目录下新建一个```new-blog.md```的文件，同时会新建一个同名的文件夹放置资源文件（例如图片）
+
+### 发布到Github Pages
+
+```
+hexo clean && hexo d -g
+```
+
+Github Pages配置在站配置文件末尾
+```
+deploy:
+  type: git
+  repo: git@github.com:schhx/schhx.github.io.git
+  branch: master
+```
+
+### 提交源码
+
+```
+git add .
+git commit -m "source"
+git push -u origin master
+```
+
