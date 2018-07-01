@@ -113,6 +113,7 @@ public void read(int a) {
 volatile变量的可见性并不代表它在多线程环境下是一定是安全的
 
 比如如下代码，多线程指定add()并不安全。
+
 ```
 volatile int a = 0;
 
