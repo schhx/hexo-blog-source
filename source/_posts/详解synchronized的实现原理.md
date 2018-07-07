@@ -194,6 +194,7 @@ public void append(String str1,String str2){
 
 
 ## 参考文档
-[Java多线程--Monitor对象（一）](https://blog.csdn.net/hello_worldee/article/details/77919549)
 
-[Java 8 并发篇 - 冷静分析 Synchronized（下）](https://juejin.im/post/5abc9de851882555770c8c72)
+- 《Java并发编程的艺术》
+- [Java多线程--Monitor对象（一）](https://blog.csdn.net/hello_worldee/article/details/77919549)
+- [Java 8 并发篇 - 冷静分析 Synchronized（下）](https://juejin.im/post/5abc9de851882555770c8c72)
