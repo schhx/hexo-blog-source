@@ -7,9 +7,7 @@ tags:
 date: 2018-07-04 14:36:46
 ---
 
-volatile是Java提供的一个轻量级同步工具，可以看做轻量级的synchronized。
-<!-- more -->
-volatile变量修饰符如果使用恰当的话，它比synchronized的使用和执行成本会更低，因为它不会引起线程上下文的切换和调度。但是volatile并不是一个特别安全的同步工具，使用的场景有限，大家使用时必须特别小心。
+volatile是Java提供的一个轻量级同步工具，可以看做轻量级的synchronized。<!-- more -->volatile变量修饰符如果使用恰当的话，它比synchronized的使用和执行成本会更低，因为它不会引起线程上下文的切换和调度。但是volatile并不是一个特别安全的同步工具，使用的场景有限，大家使用时必须特别小心。
 
 ## volatile关键字的作用
 

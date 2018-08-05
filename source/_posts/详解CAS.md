@@ -7,9 +7,7 @@ tags:
 date: 2018-07-10 21:47:30
 ---
 
-我们知道Java语言提供了synchronized来实现原子性，但是synchronized性能比较差；
-<!-- more -->
-另外Java还可以通过循环CAS(Compare And Swap，即比较并交换)来实现原子性，J.U.C中AQS同步组件、Atomic原子类操作等都是基于CAS实现的，可以说CAS是J.U.C的基石。
+我们知道Java语言提供了synchronized来实现原子性，但是synchronized性能比较差；<!-- more -->另外Java还可以通过循环CAS(Compare And Swap，即比较并交换)来实现原子性，J.U.C中AQS同步组件、Atomic原子类操作等都是基于CAS实现的，可以说CAS是J.U.C的基石。
 
 ## 什么是CAS
 

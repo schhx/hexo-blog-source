@@ -7,9 +7,7 @@ tags:
 date: 2018-06-27 22:11:45
 ---
 
-synchronized是Java语言提供的一个非常有用的关键字，它实现了并发编程的原子性、可见性和有序性。
-<!-- more -->
-利用synchronized关键字我们可以很简单地写出并发安全的程序，但是synchronized是一个重量级锁，在Java的早期版本它的效率比较低，但是随着Java SE 1.6对synchronized进行的各种优化后，它的效率在某些情况下甚至比显示锁还要高。
+synchronized是Java语言提供的一个非常有用的关键字，它实现了并发编程的原子性、可见性和有序性。<!-- more -->利用synchronized关键字我们可以很简单地写出并发安全的程序，但是synchronized是一个重量级锁，在Java的早期版本它的效率比较低，但是随着Java SE 1.6对synchronized进行的各种优化后，它的效率在某些情况下甚至比显示锁还要高。
 
 那么synchronized是怎样实现并发编程的原子性、可见性和有序性的呢？synchronized为了提高效率，又是怎样优化的呢？下面我们一起来学习下。
 
