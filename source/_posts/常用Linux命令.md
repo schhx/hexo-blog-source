@@ -171,6 +171,19 @@ head命令用于提取文件的前n行内容。
 - ``` head -n 5 demo.md```  查看前5行
 - ``` head -5 demo.md```  查看前5行
 
+### 搜索文件内容 grep
+
+grep命令用于查找文件里符合条件的字符串。
+
+- ``` grep abc demo.md ``` 在文件中搜索字符串 abc
+- ``` grep 'abc def' demo.md demo2.md``` 在多个文件中搜索
+- ``` grep -c abc demo.md``` 搜索字符串出现的次数
+- ``` grep -A 5 abc demo.md``` 搜索字符串出现行以及后面5行，A = after
+- ``` grep -B 5 abc demo.md``` 搜索字符串出现行以及前面5行，B = before
+- ``` grep -C 5 abc demo.md``` 搜索字符串出现行以及前后5行
+- ``` grep -5 abc demo.md``` 搜索字符串出现行以及前后5行
+
+
 ### 查看后几行 tail
 
 tail命令用于提取文件的后n行内容。
