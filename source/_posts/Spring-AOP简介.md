@@ -105,21 +105,21 @@ Spring AOP 与 ApectJ 的目的一致，都是为了统一处理横切业务，�
 
 ##### 通配符
 
-- * : 用于匹配任意数量的字符
+- ```*``` : 用于匹配任意数量的字符
 
 ```
 // 匹配任意返回值, service 包及其子包下任意 public 方法
 @Pointcut("execution(public * org.schhx.service..*(..))")
 ```
 
-- + : 用于匹配指定的类及其子类
+- ```+``` : 用于匹配指定的类及其子类
 
 ```
 // 匹配实现了UserDao接口的所有子类的方法
 @Pointcut("within(org.schhx.dao.UserDao+)")
 ```
 
-- .. : 用于匹配任意数量的包及其子包或者参数
+- ```..``` : 用于匹配任意数量的包及其子包或者参数
 
 ```
 // 匹配任意返回值, service 包及其子包下任意 public 方法

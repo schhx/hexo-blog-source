@@ -2,7 +2,6 @@
 title: MySQL之索引
 categories:
   - MySQL
-  - 数据库
 tags:
   - MySQL
 date: 2018-09-23 22:43:49

@@ -2,7 +2,6 @@
 title: MySQL之存储引擎
 categories:
   - MySQL
-  - 数据库
 tags:
   - MySQL
 date: 2018-09-22 08:58:41

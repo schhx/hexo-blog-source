@@ -2,7 +2,6 @@
 title: MySQL之事务隔离级别
 categories:
   - MySQL
-  - 数据库
 tags:
   - MySQL
   - 数据库

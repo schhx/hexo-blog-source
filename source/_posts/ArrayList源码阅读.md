@@ -1,8 +1,8 @@
 ---
 title: ArrayList源码阅读
 categories:
-  - 源码
-  - Java
+  - [源码]
+  - [Java]
 tags:
   - 源码
   - Java
