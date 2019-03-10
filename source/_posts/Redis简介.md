@@ -1,5 +1,5 @@
 ---
-title: 初识Redis
+title: Redis简介
 categories:
   - Redis
 tags:
