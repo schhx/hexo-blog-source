@@ -117,7 +117,7 @@ Thread thread | 获取同步状态的线程
     final boolean acquireQueued(final Node node, int arg) {
         boolean failed = true;
         try {
-            // 终端标志
+            // 中断标志
             boolean interrupted = false;
             for (;;) {
                 final Node p = node.predecessor();
