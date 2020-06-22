@@ -42,7 +42,7 @@ RabbitMQ 中有四种交换机，不同类型的交换机有着不同的路由�
 
 - fanout：把所有发送到该交换机的消息路由到所有与该交换机绑定的队列中。
 - direct：把消息路由到 RoutingKey 和 BindingKey 完全匹配的队列中。
-- topic：支持 RoutingKey 和 BindingKey 模糊匹配，其中 RoutingKey 是准确的，BindingKey 可以存在两个特殊字符 “*” 和 “#” 用于模糊匹配，“*”表示匹配一个单词，“#”表示匹配零个或等多个单词。
+- topic：支持 RoutingKey 和 BindingKey 模糊匹配，其中 RoutingKey 是准确的，BindingKey 可以存在两个特殊字符 ```*``` 和 ```#``` 用于模糊匹配，```*```表示匹配一个单词，```#```表示匹配零个或等多个单词。
 - headers：这种交换机不依赖路由键，而是靠发送消息的 headers 属性进行匹配，这种交换机性能很差，而且也不实用。
 
 ### 队列
